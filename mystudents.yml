@@ -1,0 +1,27 @@
+---
+mystudents: 
+- name: ravi
+  phno: 7777777777
+  email: ravi@gmail.com
+  address: 
+    street: 1
+    doorno:  222 
+    pin:  500072
+
+- name: srikanth
+  phno: 88888888888
+  email: srikanth@gmail.com
+  address: 
+       street: 1
+       doorno:  222 
+       pin:  500072
+
+
+- name: sravantika
+  phno: 9999999999
+  email: sravantika@gmail.com
+  address:
+   street: 1
+   doorno:  222 
+   pin:  500072
+
