@@ -2,14 +2,24 @@
 - hosts: all
   become: yes
   tasks: 
-  - name: i want to install web server on ubuntu16 node
+  - name: i want to install web server on ubuntu16 nodes
     apt: 
       name: apache2
       state: present
+    when: ansible_os_family =="Debian"
+  - name: i want to start webserver on ubuntu16 nodes
+    service: 
+       name: apache2
+       state: started
     when: ansible_os_family =="Debian"
 
   - name: i want to install web server on RedHat node
     yum:
       name: httpd
       state: present
+    when: ansible_os_family =="RedHat"
+  - name: i want to start web servers on RedHat node
+    service:
+      name: httpd
+      state: started
     when: ansible_os_family =="RedHat"
