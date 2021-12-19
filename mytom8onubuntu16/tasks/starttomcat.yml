@@ -9,4 +9,4 @@
   systemd: 
     state: started
     name: tomcat
-    enable:  yes
+    enabled: True
